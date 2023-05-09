@@ -6,7 +6,7 @@ Deny from all
 
 RewriteEngine on
 RewriteRule strona_glowna index.html
-RewriteRule omnie kimjestem.html
+RewriteRule o_mnie kimjestem.html
 RewriteRule oferta oferta.html
 RewriteRule cv cv.html
 RewriteRule kontakt kontakt.html
