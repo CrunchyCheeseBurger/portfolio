@@ -5,9 +5,13 @@ Deny from all
 </FilesMatch>
 
 RewriteEngine on
+<IfModule mod_rewrite.c>
+RewriteEngine on 
+RewriteBase /
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^([^\.]+)$ $1.php [NC,L]
+RewriteRule ^(.*)$ /index.php [NC,L]
+</IfModule>
 RewriteRule zatrudnij-programiste index.html
 RewriteRule kim-jestem kimjestem.html
 RewriteRule oferta oferta.html
