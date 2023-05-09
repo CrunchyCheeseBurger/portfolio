@@ -5,8 +5,8 @@ Deny from all
 </FilesMatch>
 
 RewriteEngine on
-RewriteRule zatrudnij_programiste index.html
-RewriteRule kim_jestem kimjestem.html
+RewriteRule strona_glowna index.html
+RewriteRule omnie kimjestem.html
 RewriteRule oferta oferta.html
 RewriteRule cv cv.html
 RewriteRule kontakt kontakt.html
