@@ -5,6 +5,9 @@ Deny from all
 </FilesMatch>
 
 RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
 RewriteRule zatrudnij-programiste index.html
 RewriteRule kim-jestem kimjestem.html
 RewriteRule oferta oferta.html
