@@ -5,8 +5,6 @@ Deny from all
 </FilesMatch>
 
 RewriteEngine on
-RewriteRule stronaglowna index.html
-RewriteRule omnie kimjestem.html
 RewriteRule oferta oferta.html
 RewriteRule cv cv.html
 RewriteRule kontakt kontakt.html
